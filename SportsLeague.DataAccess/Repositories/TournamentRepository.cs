@@ -1,8 +1,8 @@
-﻿using SportsLeague.DataAccess.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using SportsLeague.DataAccess.Context;
 using SportsLeague.Domain.Entities;
 using SportsLeague.Domain.Enums;
 using SportsLeague.Domain.Interfaces.Repositories;
-using Microsoft.EntityFrameworkCore;
 
 namespace SportsLeague.DataAccess.Repositories
 {
@@ -28,5 +28,4 @@ namespace SportsLeague.DataAccess.Repositories
                 .FirstOrDefaultAsync();
         }
     }
-
 }
